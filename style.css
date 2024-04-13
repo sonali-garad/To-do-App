@@ -1,0 +1,151 @@
+
+body
+{
+    display:flex;
+    justify-content: center;
+    /* border:2px solid blue; */
+    /* height:100vh; */
+    margin:0;
+    background-color: rgba(145, 163, 169, 0.277);
+
+}
+.main-container
+{
+    text-align:center;
+    background: linear-gradient(rgb(249, 179, 244),rgb(237, 236, 236));
+    width:55%;
+    border-radius: 20px;
+}
+.grid-container
+{
+    /* border:2px solid green; */
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:100%;
+    gap:15%;
+    margin-top:3%;
+    align-items: center;
+    /* border:2px solid black; */
+}
+
+    #todo-enter
+    {
+        height:40px;
+        border:0;
+        border-radius:20px;
+        box-shadow: 1px 1px 3px 1px;
+
+
+    }
+    #todo-Date
+    {
+        
+        height:40px;
+        border:0;
+        border-radius:20px;
+        box-shadow: 1px 1px 3px 1px;
+}
+
+.add-button
+{
+    border:0;
+    border-radius:10px;
+    box-shadow: 1px 1px 3px 1px;
+    background-color: rgb(7, 111, 7);
+    color:white;
+    padding:15px 0px;
+
+}
+#del-button
+{
+    border:0;
+        border-radius:10px;
+        box-shadow: 1px 1px 3px 1px;
+        background-color: rgb(138, 38, 38);
+        color:white;
+        padding:15px 0px;
+
+}
+.item-duedate
+{
+    font-weight:bold ;
+    font-size:1.2rem;
+    color:rgba(17, 2, 2, 0.955);
+}
+
+input 
+/*MEDIA QUERIES*/
+@media screen and (max-width:1000px)
+{
+    body,html
+    {
+        overflow: hidden;
+    }
+    .grid-container
+    {
+        width:90%;
+        /* border:2px solid black; */
+        padding :0  10px;
+    }
+    .main-container
+    {
+        width:100%;
+        margin:3%;
+    }
+    #todo-Date
+    {
+        /* width:40px; */
+        /* border:2px solid green; */
+    }
+    #todo-enter
+    {
+        /* width:20%; */
+    }
+} 
+
+@media screen and (max-width:700px)
+{
+    body
+    {
+        height:100vh;
+        background: linear-gradient(rgb(249, 219, 247),rgb(237, 236, 236));
+        /* background:linear-gradient(lightblue,lightblue) ; */
+    }
+    #todo-Date, #todo-enter
+    {
+        /* width:max-content; */
+        height: 50px;
+        width: 90px; /* Adjust width as needed */
+        border: 0;
+        border-radius: 20px;
+        box-shadow: 1px 1px 3px 1px;
+    }
+    .grid-container
+    {
+        /* grid-template-columns: 1fr 1fr 5cqb; */
+        padding: 0px 0px;
+        align-items: center;
+        width: 100%;
+    
+        /* width:100%;; */
+    }
+    .add-button
+    {
+        border:0;
+        border-radius:10px;
+        box-shadow: 1px 1px 3px 1px;
+        background-color: rgb(8, 109, 18);
+        color:white;
+        padding:15px 0px;
+        width:fit-conten;
+
+    }
+    .main-container
+    {
+        width:100%;
+        margin:0;
+    }
+}
+
+
+
